@@ -1,0 +1,144 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+@import url(ie.css);
+@import url(print.css);
+@import url(screen.css);
+@import url(bootstrap.min.css);
+@import url(font-awesome.min.css);
+@import url(base.css);
+@import url(mixin.css);
+@import url(animate.min.css);
+@import "mixin";
+
+
+.header-navigation{@include add-border(1px , #d3dde6 ,bottom);@include add-padding(15px, left-right)}
+.navbar-logo{display:inline-block;@include add-padding(10px, top-bottom);float:left;@include add-padding(40px, right)}
+.navbar-logo a{display:block}
+.navbar-logo a img{width:55px}
+.custom-nav{float:left}
+.custom-nav .navbar-default{background:rgba(255,255,255,0);border:0 none;@include border-radius(0);@include add-margin(0, bottom)}
+.custom-nav .navbar-default .navbar-collapse{border:0 none;@include add-padding(0px, all)}
+.custom-nav .navbar-default .navbar-nav>li>a{color: #0e1e42;font-weight: 600;font-size: 16px;line-height: 45px}
+.custom-nav .navbar-default .navbar-nav>li>a:hover, .custom-nav .navbar-default .navbar-nav>li.active a{color: #536ea5;box-shadow: 0px 2px 0px 0px #6278aa;background: transparent}
+.right-menu{float:right}
+.login-user-wrap{float:right;@include add-padding(15px, top)}
+.login-user-wrap ul{}
+.login-user-wrap ul li{float:left;@include add-border(1px , #d3dde6 ,right);@include add-padding(20px, left-right)}
+.login-user-wrap ul li:last-child{border:0 none;@include add-padding(0px, right)}
+.login-user-wrap ul li:first-child{@include add-padding(0px, left)}
+.login-user-wrap ul li a{display:block}
+.login-user a{display:block}
+.login-user a img, .img-setting{width:45px;@include add-border(1px , #d3dde6 ,all);@include border-radius(4px)}
+.login-user-settings .dropdown-toggle{background:transparent;border:0 none;@include add-padding(0px, all)}
+.login-user-settings .img-setting{@include add-padding(4px, all);float:left}
+.login-user-settings .caret-icon{@include add-padding(7px, top);width: 20px;@include add-margin(5px, left)}
+.login-user-settings .btn-group.open .dropdown-toggle{box-shadow:inset 0 3px 5px rgba(0,0,0,0)}
+.login-user-settings .open>.dropdown-toggle:hover, .login-user-settings .open>.dropdown-toggle:focus{background:transparent;border:0 none;padding:0}
+.login-user-settings .dropdown-menu{right:0; left:unset;@include add-margin(0, all);top: 62px;background:#0e1e42;@include add-padding(0px, all);@include border-radius(0);width:220px}
+.login-user-settings .dropdown-menu li{float: none;border: none;@include add-padding(0px, all)}
+.login-user-settings .dropdown-menu li a{border: 0 none;color: #cccccc; font-size: 12px;line-height: 19px;font-weight: 400;padding: 12px 10px;
+    @include add-border(1px , #23303b ,bottom)}
+.login-user-settings .dropdown-menu li a span{color: #ffffff;text-align: center;width: 20px;font-size: 14px;@include add-margin(10px, right);vertical-align: baseline; -webkit-transition: color 200ms ease;-moz-transition: color 200ms ease;-ms-transition: color 200ms ease; -o-transition: color 200ms ease;
+    transition: color 200ms ease}
+.login-user-settings .dropdown-menu li a:hover{background:transparent;color:#ffffff;@include add-border(1px , #536ea5 ,left)}
+.login-user-settings .dropdown-menu:after {right: 20px;left: auto;}
+.login-user-settings .dropdown-menu:after {bottom: 100%;right: 46px;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;
+    pointer-events: none;border-color: rgba(0, 0, 0, 0);border-bottom-color: #0e1e42;border-width: 7px; @include add-margin(-5px, left)}
+.xn-icon-button{float:right;position:relative}
+.xn-icon-button a{padding: 10px 13px; color: #6d87a8;font-size: 20px;text-align: center;display: block;line-height:57px}
+.xn-icon-button .caret-icon {@include add-padding(13px, top);float: right;width:20px}
+.xn-icon-button .panel.xn-drop-left {left: auto;right: 0px}
+.xn-icon-button .panel {display: none;position: absolute;left: 0px;top: 77px;width: 400px;z-index: 3;border-top-width: 1px;@include border-radius(0)}
+.xn-icon-button.active > .panel {display: block}
+.xn-icon-button > .panel .panel-heading .panel-title {font-size: 14px;float:left}
+.xn-icon-button > .panel .panel-footer {background: #F5F5F5;border: 0px}
+.xn-icon-button > .panel .panel-footer  a{color: #6d87a8;font-size:12px;line-height:20px;padding: 3px 10px}
+.xn-icon-button .panel .panel-body.list-group {@include add-padding(0px, all)}
+.xn-icon-button .list-group .list-group-item .fa {@include add-margin(10px, right);@include add-border(1px , #818da7 ,all);@include border-radius(100px);color: #818da7;font-size: 14px;height: 34px;@include add-padding(9px, all);text-align: center;vertical-align: middle;width: 34px}
+.xn-icon-button .panel .panel-body.list-group .media{line-height:18px;font-size:12px;text-align:left}
+.xn-icon-button .panel .panel-body.list-group .media h5{@include add-margin(0, top);@include add-margin(5px, bottom)}
+.xn-icon-button .panel.panel-default:after {border-bottom-color: #ddd}
+.xn-icon-button .panel.xn-drop-left:after {right: 20px;left: auto}
+.xn-icon-button .panel:after {top: -11px;left: 20px;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);border-bottom-color: #E5E5E5;border-width: 5px;@include add-margin(-5px, left)}
+.dashboard-content{@include add-padding(15px, all)}
+.dashboard-content h1{color:#0d2443;font-size:26px;font-weight: 600;@include add-margin(20px, bottom)}
+.right-buttom-list{float:right;@include add-margin(20px, top)}
+.panel-widget{margin:20px 0 10px;@include border-radius(0);box-shadow:1px 2px 1px rgba(0,0,0,0.1);border:0 none}
+.panel-widget .panel-heading{background:transparent;border-color: #d3dde6;padding: 15px 15px 15px 20px}
+.panel-widget .panel-heading .panel-title-box {float: left}
+.panel-widget .panel-title-box h3{color:#0d2443;font-size:18px;@include add-margin(0, all);font-weight: normal}
+.panel-controls{float:right}
+.daily-control{float:right}
+.daily-control select {border:0 none;padding:5px 35px 5px 10px;background:#ffffff url(../images/Arrowdown-icon-selected.svg) no-repeat;background-position: 94.5% center;-webkit-appearance: unset;-moz-appearance: unset}
+.extra-settings{float:right}
+.extra-settings .btn-default{background:transparent;border:0 none;@include add-padding(0px, all)}
+.extra-settings .btn-default:active:hover, .extra-settings .btn-default.active:hover, .extra-settings .open>.dropdown-toggle.btn-default:hover, .extra-settings .open>.dropdown-toggle.btn-default:focus{background:transparent;border:0 none;box-shadow:inset 0 3px 5px rgba(0,0,0,0)}
+.extra-settings .dropdown-menu{left:unset;right:0;@include add-border(1px , #d3dde6 ,bottom);@include add-margin(0, all);@include add-padding(0px, all)}
+.extra-settings .dropdown-menu li a{color:#6d87a8;padding:10px 15px}
+.extra-settings .dropdown-menu li a:hover{background:#6d80ad;color:#ffffff}
+.list-group-contacts table{width:100%}
+.list-group-contacts table td{padding:4px 0px 5px 5px}
+.list-group-contacts table td h5{font-weight:normal}
+.list-group-contacts table td:first-child{width:55px}
+.list-group-contacts table td:nth-child(2){width:40%}
+.list-group-contacts table td:last-child{width: 10%;text-align: right}
+.list-group-contacts .progress{@include add-margin(0, all);height:15px;@include border-radius(0);background-color: #dee7ee}
+.list-group-contacts .progress span{visibility:hidden}
+.panel-widget .panel-footer{@include add-border(1px , #d3dde6 ,top);background: transparent;padding:5px 15px}
+.panel-widget .panel-footer img{width:70px}
+.panel-widget .panel-footer a{color:#668192;font-size:16px}
+.mobile-user-list{padding:15px 0}
+.mobile-user-list ul{@include add-margin(0, all);@include add-padding(0px, all)}
+.mobile-user-list ul li{width:50%;float:left}
+.mobile-user-list ul li .color-circle{width:15px;height:15px;@include border-radius(100px);@include add-margin(2px, top)}
+.mobile-user-list ul li h4{@include add-margin(5px, top)}
+.mobile-user-list .media{@include add-margin(10px, bottom)}
+.mobile-user-list small{color:#0d2443}
+.color-rect{width:15px;height:15px}
+.panel-footer ul{@include add-margin(0, all);@include add-padding(0px, all)}
+.panel-footer ul li{float:left;padding: 5px 30px 5px 0}
+.panel-footer ul li p, .panel-footer ul li span {display:inline-block;@include add-margin(0, all)}
+.display-mobile{display:none !important}
+#Container{height:240px}
+/*#Container svg{margin-left:8%}*/
+@media only screen and (max-width: 1024px)
+{
+	.custom-nav .navbar-default .navbar-nav > li > a{padding:15px 8px;font-size:14px}
+	.navbar-logo{@include add-padding(15px, right);@include add-padding(20px, top)}
+	.login-user-wrap ul li{padding:0px 10px}
+	.xn-icon-button a{padding: 10px 8px;font-size:16px}
+	.login-user a img, .img-setting{width:35px}
+	.login-user-wrap ul li:first-child{@include add-padding(0px, left)}
+	.login-user-settings .caret-icon{@include add-padding(3px, top)}
+	.navbar-logo a img{width:40px}
+	.login-user-wrap{@include add-padding(22px, top)}
+}
+@media only screen and (max-width: 767px)
+{
+	.navbar-toggle{@include add-margin(20px, top);@include add-margin(0px, right)}
+	.right-buttom-list {float: none;@include add-margin(5px, top)}
+	.custom-nav{float:right}
+	.custom-nav .navbar-default .navbar-collapse{position: absolute;right: -5px;background: #ffffff;@include add-border(1px , #d3dde6 ,all);top: 70px;z-index: 9;min-width: 300px;box-shadow: 0 2px 5px #d3dde6;overflow:visible}
+	.custom-nav .navbar-nav{@include add-margin(0, all)}
+	.custom-nav .navbar-default .navbar-nav > li > a{line-height:25px}
+	.custom-nav .navbar-default .navbar-collapse:before {bottom: 100%;right: 15px;border: solid transparent;content: " ";height: 0;width: 0;position: absolute; pointer-events: none;border-color: rgba(0, 0, 0, 0);border-bottom-color: #d3dde6;border-width: 7px; @include add-margin(-5px, left)}
+	#Container {height: auto}
+}
+@media only screen and (max-width: 400px)
+{
+	#Container svg{margin-left:12%}
+}
+@media only screen and (max-width: 400px)
+{
+	.dashboard-content{padding: 15px 0}
+	.xn-icon-button{display:none}
+	.display-mobile{display:block !important;text-align: center;@include add-border(1px , #d3dde6 ,top)}
+	.display-mobile ul{@include add-margin(0, all);@include add-padding(0px, all);display: inline-block}
+	.display-mobile ul li{float:left}
+	.display-mobile ul li a{color: #6d87a8;display:block;padding: 10px 20px;font-size: 22px}
+}
